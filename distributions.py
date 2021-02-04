@@ -116,7 +116,7 @@ class Nbin:
 
     def pgf(self, t: float):
         """returns m_X(t)"""
-        x=((1 - self._value2 * t) / (1 - self._value2)) ** self._value1
+        x = ((1 - self._value2 * t) / (1 - self._value2)) ** -self._value1
         return x
 
 
