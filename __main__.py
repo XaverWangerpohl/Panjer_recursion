@@ -87,8 +87,9 @@ def main():
     pn = xl.chart.Reference(ws2, min_col=2, min_row=1, max_row=premium + 10)
 
     chart = xl.chart.ScatterChart()
-    """chart.x_axis.title = 'n'"""
-    """chart.y_axis.title = 'P(S=n)'"""
+    chart.x_axis.title = 'n'
+    chart.y_axis.title = 'p'
+    chart.legend = None
     series = xl.chart.Series(pn, n, title_from_data=True)
 
     chart.series.append(series)
